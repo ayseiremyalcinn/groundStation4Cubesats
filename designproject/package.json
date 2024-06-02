@@ -1,5 +1,6 @@
 {
   "name": "designproject",
+  "homepage": "https://ayseiremyalcinn.github.io/groundStation4Cubesats/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
