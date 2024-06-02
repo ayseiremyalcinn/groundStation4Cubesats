@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
@@ -11,7 +10,7 @@ function App() {
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
-};
+  };
   return (
     <div className="App">
       <header className="App-header">
@@ -35,7 +34,7 @@ function App() {
         >
           Demonstation Video
         </a>
-        <button onClick={onButtonClick}>
+        <button className="download-link" onClick={onButtonClick}>
         Download Project Poster 
         </button>
         {/* <img src={process.env.PUBLIC_URL + "/poster.pdf"}></img> */}
