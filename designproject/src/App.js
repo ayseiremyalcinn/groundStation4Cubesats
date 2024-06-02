@@ -25,9 +25,12 @@ function App() {
         >
           Demonstation Video
         </a>
-        <a href="/poster.pdf" download="poster.pdf" className="download-link">
-          Download Project Poster 
-        </a>
+
+        {/* <img src={process.env.PUBLIC_URL + "/poster.pdf"}></img> */}
+        <a href={process.env.PUBLIC_URL + "/poster.pdf"} download="poster.pdf" className="download-link">
+          Download Project Poster </a>
+        
+        
         <h3>Introduction</h3>
         <div className="paragraf"> This project provides a Ground Station Systems Software for CubeSats on Low Earth Orbit. It facilitates communication with satellites
         thanks to its user-friendly interface. Using the application, We can track our Satellite on LEO orbit and establish data communication. The
