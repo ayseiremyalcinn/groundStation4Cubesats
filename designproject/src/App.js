@@ -2,6 +2,16 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+
+  const onButtonClick = () => {
+    const pdfUrl = "poster.pdf";
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.download = "posterPDF.pdf"; // specify the filename
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+};
   return (
     <div className="App">
       <header className="App-header">
@@ -25,10 +35,12 @@ function App() {
         >
           Demonstation Video
         </a>
-
+        <button onClick={onButtonClick}>
+        Download Project Poster 
+        </button>
         {/* <img src={process.env.PUBLIC_URL + "/poster.pdf"}></img> */}
-        <a href={process.env.PUBLIC_URL + "/poster.pdf"} download="poster.pdf" className="download-link">
-          Download Project Poster </a>
+        {/* <a href={process.env.PUBLIC_URL + "/poster.pdf"} download="poster.pdf" className="download-link">
+          Download Project Poster </a> */}
         
         
         <h3>Introduction</h3>
